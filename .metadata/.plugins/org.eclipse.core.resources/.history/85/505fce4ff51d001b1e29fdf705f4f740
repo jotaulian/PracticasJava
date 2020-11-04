@@ -1,0 +1,34 @@
+package es.studium.operaciones3;
+
+import java.util.Scanner;
+
+public class operaciones3
+{
+
+	public static void main(String[] args)
+	{
+		int num1, num2, num3;
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Dame un número:");
+		num1 = teclado.nextInt();
+		System.out.println("Dame otro número:");
+		num2 = teclado.nextInt();
+		System.out.println("Dame otro número:");
+		num3 = teclado.nextInt();
+		System.out.println("La suma de los números es: " + suma(num1,num2,num3));
+		System.out.println("El producto de los números es: " + producto(num1,num2,num3));
+		System.out.println("La media de los números es: " + media(num1,num2,num3));
+		teclado.close();
+		
+	}
+	public static int suma(int num1, int num2, int num3) {
+		return (num1 + num2 + num3);
+	}
+	public static int producto(int num1, int num2, int num3) {
+		return (num1 * num2 * num3);
+	}
+	public static float media(int num1, int num2, int num3) {
+		
+		return ((suma(num1,num2,num3))/(float)3);
+	}
+}

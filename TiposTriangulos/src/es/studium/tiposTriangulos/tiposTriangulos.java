@@ -1,0 +1,28 @@
+package es.studium.tiposTriangulos;
+
+import java.util.Scanner;
+
+public class tiposTriangulos
+{
+
+	public static void main(String[] args)
+	{
+		float lado1, lado2, lado3;
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Dame la longitud del lado 1:");
+		lado1 = teclado.nextInt();
+		System.out.println("Dame la longitud del lado 2:");
+		lado2 = teclado.nextInt();
+		System.out.println("Dame la longitud del lado 3:");
+		lado3 = teclado.nextInt();
+		if(lado1==lado2 && lado2==lado3) {
+			System.out.println("El triangulo formado es Equilatero");
+		}
+		if(lado1 == lado2 && lado2 != lado3 || lado1 != lado2 && lado2 == lado3 || lado1 == lado3 && lado2 != lado3 ){
+			System.out.println("El triangulo formado es Isósceles");
+		}
+		else{
+			System.out.println("El triangulo formado es Escaleno");
+		}
+	}
+}

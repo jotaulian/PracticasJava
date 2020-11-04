@@ -1,0 +1,10 @@
+package es.studium.expresion;
+
+public class expresion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

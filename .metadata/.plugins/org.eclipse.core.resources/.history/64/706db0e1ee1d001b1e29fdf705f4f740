@@ -1,0 +1,17 @@
+package es.studium.operaciones;
+
+import java.util.Scanner;
+
+public class operaciones {
+
+	public static void main(String[] args) {
+		int a,b;
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Dame un número:");
+		a = teclado.nextInt();
+		System.out.println("Dame otro número:");
+		b = teclado.nextInt();
+		teclado.close();
+	}
+
+}
